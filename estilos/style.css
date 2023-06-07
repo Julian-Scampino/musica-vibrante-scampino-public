@@ -268,14 +268,7 @@ section article div h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0px;
-  animation: balance 4s linear alternate infinite; }
-
-@keyframes balance {
-  from {
-    transform: translateX(-150px); }
-  to {
-    transform: translateX(150px); } }
+  margin: 30px 0px; }
 
 #avatar {
   border: 5px solid red;

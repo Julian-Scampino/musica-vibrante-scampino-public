@@ -8,18 +8,10 @@
     "build-css": "node-sass --include-path scss scss/estilos.scss estilos/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Julian-Scampino/musica_vibrante.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Julian-Scampino/musica_vibrante/issues"
-  },
-  "homepage": "https://github.com/Julian-Scampino/musica_vibrante#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "node-sass": "^9.0.0",
+    "nodemon": "^2.0.22"
   }
 }
