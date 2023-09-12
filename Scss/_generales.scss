@@ -18,3 +18,10 @@ body{
     grid-template-rows: auto auto 50px;
     background-color: rgb(46, 45, 45);
 }
+svg {
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    color: #0d6efd;
+    margin: 5px;
+}
