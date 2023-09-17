@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilos.scss estilos/style.css --output-style compressed",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css": "node-sass --include-path scss scss/index.scss estilos/index.css --output-style compressed && node-sass --include-path scss scss/nosotros.scss estilos/nosotros.css --output-style compressed && node-sass --include-path scss scss/oferta.scss estilos/oferta.css --output-style compressed && node-sass --include-path scss scss/galeria.scss estilos/galeria.css --output-style compressed && node-sass --include-path scss scss/contacto.scss estilos/contacto.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-scss": "sass --style=compressed Scss:estilos",
+    "watch-scss": "nodemon -e scss -x \"npm run build-scss\""
   },
-  "author": "",
+  "author": "julian-scampino",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^9.0.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "sass": "^1.67.0"
   }
 }

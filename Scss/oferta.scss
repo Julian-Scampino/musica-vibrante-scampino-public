@@ -1,0 +1,116 @@
+@use "variables";
+@import "variables";
+@import "generales";
+@import "header";
+@import "seccionRepetitiva";
+@import "footer";
+
+/* ----------------------------------------------OFERTA---------------------------------------------- */
+.main__oferta{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150vh;
+}
+.section__table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+table,caption,tr,th,td{
+    border: 1px solid variables.$azul; 
+    padding: 39px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+}
+table {
+    caption-side: top;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 50px 0px;
+}
+caption{
+    background-color: #0d4879;
+}
+th{
+    background-color: variables.$rojoClaro;
+}
+tr:nth-child(odd) {
+    background: #008cff0d;
+}
+
+/* ---------------------------------------------- RESPONSIVE---------------------------------------------- */
+
+/* ---------------------- tablet -------------------- */ 
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    .seccion__repetitiva{
+        font-size: 35px;
+    }
+    .btn-primary {
+        margin-bottom: 30px;
+    }
+    table, caption, tr, th, td {
+        padding: 30px;
+    }
+}
+/* ---------------------- mobile -------------------- */ 
+@media screen and (min-width: 576px) and (max-width: 768px){
+
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start;
+    }
+    .seccion__repetitiva{
+        font-size: 30px;
+    }
+    .titulo_pagina{
+        margin: 15px 0px 15px 0px;
+    }
+    .texto__repetitivo{
+        margin-bottom: 20px;
+    }
+    .btn-primary {
+        margin-bottom: 30px;
+    }
+    table, caption, tr, th, td {
+        padding: 25px;
+    }
+}
+/* ---------------------- mobile mas chico -------------------- */ 
+@media screen and (min-width: 1px) and (max-width: 576px){
+
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start;
+    }
+    .seccion__repetitiva{
+        font-size: 30px;
+    }
+    .titulo_pagina{
+        margin: 15px 0px 15px 0px;
+    }
+    .texto__repetitivo{
+        margin-bottom: 20px;
+    }
+    .btn-primary {
+        margin-bottom: 30px;
+    }
+    table, caption, tr, th, td {
+        padding: 13px 0px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    table{
+        width: 100%;
+    }
+}
