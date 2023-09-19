@@ -37,3 +37,37 @@
     text-shadow: 0px 0px 3px black;
     margin-bottom: 30px;
 }
+//@media screen and (min-width: 768px) and (max-width: 991px)
+@mixin queriesMin768Max991{
+    .seccion__repetitiva{
+        font-size: 35px;
+    }
+}
+
+
+//@media screen and (min-width: 576px) and (max-width: 768px)
+@mixin queriesMin576Max768{
+    .seccion__repetitiva{
+        font-size: 30px;
+    }
+    .titulo_pagina{
+        margin: 15px 0px 15px 0px;
+    }
+    .texto__repetitivo{
+        margin-bottom: 20px;
+    } 
+}
+
+
+//@media screen and (min-width: 1px) and (max-width: 576px)
+@mixin queriesMin1Max576{
+    .seccion__repetitiva{
+        font-size: 30px;
+    }
+    .titulo_pagina{
+        margin: 15px 0px 15px 0px;
+    }
+    .texto__repetitivo{
+        margin-bottom: 20px;
+    }
+}

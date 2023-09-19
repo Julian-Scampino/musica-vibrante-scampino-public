@@ -1,9 +1,8 @@
 @use "variables";
-@import "variables";
-@import "generales";
-@import "header";
-@import "seccionRepetitiva";
-@import "footer";
+@use "generales";
+@use "header";
+@use "seccionRepetitiva";
+@use "footer";
 
 /* ----------------------------------------------NOSOTROS---------------------------------------------- */
 .main__nosotros{
@@ -57,10 +56,8 @@
 
 /* ---------------------- tablet -------------------- */ 
 @media screen and (min-width: 768px) and (max-width: 991px){
+    @include seccionRepetitiva.queriesMin768Max991;
 
-    .seccion__repetitiva{
-        font-size: 35px;
-    }
     .btn-primary {
         margin-bottom: 30px;
     }
@@ -70,23 +67,7 @@
 }
 /* ---------------------- mobile -------------------- */ 
 @media screen and (min-width: 576px) and (max-width: 768px){
-
-    .container-fluid{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: flex-start;
-    }
-    .seccion__repetitiva{
-        font-size: 30px;
-    }
-    .titulo_pagina{
-        margin: 15px 0px 15px 0px;
-    }
-    .texto__repetitivo{
-        margin-bottom: 20px;
-    } 
+    @include seccionRepetitiva.queriesMin576Max768; 
     .article__nosotros{
         width: 100%;
         padding: 40px;
@@ -97,23 +78,7 @@
 }
 /* ---------------------- mobile mas chico -------------------- */ 
 @media screen and (min-width: 1px) and (max-width: 576px){
-
-    .container-fluid{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: flex-start;
-    }
-    .seccion__repetitiva{
-        font-size: 30px;
-    }
-    .titulo_pagina{
-        margin: 15px 0px 15px 0px;
-    }
-    .texto__repetitivo{
-        margin-bottom: 20px;
-    }
+    @include seccionRepetitiva.queriesMin1Max576;
     .article__nosotros{
         width: 100%;
         padding: 40px;

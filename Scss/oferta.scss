@@ -1,9 +1,8 @@
 @use "variables";
-@import "variables";
-@import "generales";
-@import "header";
-@import "seccionRepetitiva";
-@import "footer";
+@use "generales";
+@use "header";
+@use "seccionRepetitiva";
+@use "footer";
 
 /* ----------------------------------------------OFERTA---------------------------------------------- */
 .main__oferta{
@@ -35,10 +34,10 @@ table {
 caption{
     background-color: #0d4879;
 }
-th{
+thead{
     background-color: variables.$rojoClaro;
 }
-tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
     background: #008cff0d;
 }
 
@@ -47,9 +46,7 @@ tr:nth-child(odd) {
 /* ---------------------- tablet -------------------- */ 
 @media screen and (min-width: 768px) and (max-width: 991px){
 
-    .seccion__repetitiva{
-        font-size: 35px;
-    }
+    @include seccionRepetitiva.queriesMin768Max991;
     .btn-primary {
         margin-bottom: 30px;
     }
@@ -60,22 +57,7 @@ tr:nth-child(odd) {
 /* ---------------------- mobile -------------------- */ 
 @media screen and (min-width: 576px) and (max-width: 768px){
 
-    .container-fluid{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: flex-start;
-    }
-    .seccion__repetitiva{
-        font-size: 30px;
-    }
-    .titulo_pagina{
-        margin: 15px 0px 15px 0px;
-    }
-    .texto__repetitivo{
-        margin-bottom: 20px;
-    }
+    @include seccionRepetitiva.queriesMin576Max768; 
     .btn-primary {
         margin-bottom: 30px;
     }
@@ -86,22 +68,7 @@ tr:nth-child(odd) {
 /* ---------------------- mobile mas chico -------------------- */ 
 @media screen and (min-width: 1px) and (max-width: 576px){
 
-    .container-fluid{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: flex-start;
-    }
-    .seccion__repetitiva{
-        font-size: 30px;
-    }
-    .titulo_pagina{
-        margin: 15px 0px 15px 0px;
-    }
-    .texto__repetitivo{
-        margin-bottom: 20px;
-    }
+    @include seccionRepetitiva.queriesMin1Max576;
     .btn-primary {
         margin-bottom: 30px;
     }
