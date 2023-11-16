@@ -50,16 +50,6 @@
     width: 100%;
     height: 100%;
 }
-footer{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    text-align: center;
-    font-size: 30px;
-    grid-area: footer;
-    color: white;
-}
 .seccion__contacto-footer svg {
     vertical-align: middle;
     height: 30px;
@@ -72,4 +62,30 @@ svg.bi.bi-youtube {
 }
 svg.bi.bi-whatsapp {
     color: #00c600;
+}
+footer{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    grid-area: footer;
+    color: white;
+}
+footer p{
+    font-size: 26px;
+    margin: 0;
+}
+footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 0.3em;
+    font-size: 19px;
+}
+footer svg {
+    color: #0a66c2;
+    background-color: white;
+    border-radius: 2px;
 }

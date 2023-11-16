@@ -26,14 +26,14 @@
     color: variables.$azul;
     font-size: 60px;
     margin: 30px 0px 40px 0px;
-    background-color: rgba(0, 0, 0, 0.250);
+    background-color: rgba(0, 0, 0, 0.125);
     text-shadow: 0px 0px 3px black;
     text-decoration: underline;
 }
 .texto__repetitivo{
-    color: rgb(255, 73, 73);
+    color: variables.$rojoClaro;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.250);
+    background-color: rgba(0, 0, 0, 0.125);
     text-shadow: 0px 0px 3px black;
     margin-bottom: 30px;
 }

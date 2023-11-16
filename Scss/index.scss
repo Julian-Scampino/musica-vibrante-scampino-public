@@ -18,18 +18,18 @@
     align-items: center;
     box-sizing: border-box;
     padding: 5%;
-    animation-name: aparecer;
+    /* animation-name: aparecer;
     animation-duration: 2s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; */
 }
-@keyframes aparecer{
+/* @keyframes aparecer{
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
     }
-}
+} */
 .seccion__index h2{
     font-size: 40px;
 }
@@ -56,6 +56,9 @@
     height: 100%;
     width: 50%;
     color: white;
+}
+.articles__oferta-index h2{
+    text-shadow: 1px 1px 3px #000000;
 }
 //----------Seccion partitura de index
 .seccion__partitura-index{
@@ -131,6 +134,9 @@
     width: 50%;
     color: rgb(255, 255, 255);
 }
+.articles__galeria-index h2{
+    text-shadow: 1px 1px 3px #00000089;
+}
 .div__imagenes{
     width: 50%;
     height: 100%;
@@ -148,6 +154,7 @@ section article div h2{
 }
 .articles__nosotros-index div h2{
     color: black;
+    text-shadow: 0 0 2px #ff8d8d3d;
 }
 //----------Seccion de comentarios con citas de index
 .seccion__comentarios-index {
@@ -167,10 +174,11 @@ article.articles__comentarios-index.article__index {
     padding: 4%;
 }
 .img-comentarios-index {
-    width: 40%;
-    min-width: 80px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+        width: 9vw;
+        min-width: 80px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 0 20px 0px #00000042;
 }
 .contenedor__comentarios-index p{
     color: white;

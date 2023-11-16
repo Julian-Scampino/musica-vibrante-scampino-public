@@ -36,12 +36,13 @@
 }
 
 #avatar{
-    border: 5px solid red;
+    border: 5px solid #ff00007d;
     width: 200px;
     height: 200px;
 }
-#avatar__director{
+#avatar__director-texto{
     color: red;
+    font-size: 20px;
 }
 .seccion__nosotros hr{
     border: none;
