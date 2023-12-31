@@ -35,10 +35,10 @@ caption{
     background-color: #0d4879;
 }
 thead{
-    background-color: variables.$rojoClaro;
+    background-color: variables.$rojoOpaco;
 }
 tbody tr:nth-child(odd) {
-    background: #008cff0d;
+    background: #3b4147;
 }
 
 /* ---------------------------------------------- RESPONSIVE---------------------------------------------- */
@@ -47,9 +47,6 @@ tbody tr:nth-child(odd) {
 @media screen and (min-width: 768px) and (max-width: 991px){
 
     @include seccionRepetitiva.queriesMin768Max991;
-    .btn-primary {
-        margin-bottom: 30px;
-    }
     table, caption, tr, th, td {
         padding: 30px;
     }
@@ -58,9 +55,6 @@ tbody tr:nth-child(odd) {
 @media screen and (min-width: 576px) and (max-width: 768px){
 
     @include seccionRepetitiva.queriesMin576Max768; 
-    .btn-primary {
-        margin-bottom: 30px;
-    }
     table, caption, tr, th, td {
         padding: 25px;
     }
@@ -69,9 +63,6 @@ tbody tr:nth-child(odd) {
 @media screen and (min-width: 1px) and (max-width: 576px){
 
     @include seccionRepetitiva.queriesMin1Max576;
-    .btn-primary {
-        margin-bottom: 30px;
-    }
     table, caption, tr, th, td {
         padding: 13px 0px;
         font-size: 12px;

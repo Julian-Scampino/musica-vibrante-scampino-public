@@ -9,8 +9,8 @@ Puedes verlo en este link https://musicavibrante.000webhostapp.com/index.html
 
 ### Para ver cambios de scss en tiempo real
 
-###  `npm run watch-css`
+###  `npm run watch-scss`
 
 ### Para compilar el scss
 
-###  `npm run build-css`
+###  `npm run build-scss`

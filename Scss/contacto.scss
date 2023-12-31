@@ -13,12 +13,35 @@
     align-items: center;
 }
 .seccion__formulario {
-    padding: 2% 0;
+    padding: 2%;
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
+}
+#contacto-contenedor__contacto{
+    width: 40%;
+    
+}
+#contacto-textoContacto-contenedor {
+    color: white;
+    line-height: 2em;
+}
+#contacto-textoContacto-contenedor p svg.iconos-elementos-contacto{
+    height: auto;
+    width: auto;
+    margin: 5px;
+    color: #55b2ff;
+}
+#contacto-textoContacto-contenedor p svg.bi{
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+.seccion__formulario iframe{
+    width: 100%;
 }
 #leyenda__formulario{
     color: variables.$azul;
@@ -29,23 +52,21 @@ form {
     text-align: center;
     color: variables.$rojoClaro;
     border-radius: 40px;
-    width: 40%;
-    min-width: 500px;
-    background: #0000008f;
-    animation: sombra 12s infinite linear;
-}
-form p{
-        margin-top: 0;
-        margin-bottom: 0px;
+    /* width: 40%;
+    min-width: 500px; */
+    background: #00000068;
+    //animation: sombra 12s infinite linear;
 }
 form input[type="text"], form input[type="email"], form textarea {
     border: none;
     border-radius: 5px;
     width: 258px;
 }
+form textarea {
+    height: 150px;
+}
 form .btn-primary {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0px;
 }
 @keyframes sombra{
     0% {
@@ -73,36 +94,34 @@ form .btn-primary {
 @media screen and (min-width: 768px) and (max-width: 991px){
 
     @include seccionRepetitiva.queriesMin768Max991;
-    .btn-primary {
-        margin-bottom: 30px;
-    }
 }
 /* ---------------------- mobile -------------------- */ 
 @media screen and (min-width: 576px) and (max-width: 768px){
 
     @include seccionRepetitiva.queriesMin576Max768; 
-    .titulo_pagina{
-        margin: 15px 0px 15px 0px;
+    .seccion__formulario {
+        flex-direction: column;
     }
-    .texto__repetitivo{
-        margin-bottom: 20px;
+    #contacto-contenedor__contacto {
+        width: 90%;
     }
-    .btn-primary {
-        margin-bottom: 30px;
+    form{
+        width: 95%;
+        min-width: 1px;
     }
 }
 /* ---------------------- mobile mas chico -------------------- */ 
 @media screen and (min-width: 1px) and (max-width: 576px){
 
     @include seccionRepetitiva.queriesMin1Max576;
-    .btn-primary {
-        margin-bottom: 30px;
-    }
     .seccion__formulario {
-        padding: 5% 0;
+        flex-direction: column;
+    }
+    #contacto-contenedor__contacto {
+        width: 100%;
     }
     form{
-        width: 95%;
+        width: 100%;
         min-width: 1px;
     }
     textarea{

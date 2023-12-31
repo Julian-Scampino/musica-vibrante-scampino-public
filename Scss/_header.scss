@@ -22,6 +22,16 @@ header{
     justify-content: center;
     align-items: center;
 }
+// cambios a lo que viene de bootstrap
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* -------- Titulo del Header -------- */
 .navbar-light .navbar-brand {
     color: variables.$azul;
@@ -43,6 +53,7 @@ header{
 .navbar-light .navbar-nav .nav-link {
     color: white;
     margin-right: 10px;
+    font-size: 16px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
     color: variables.$rojoClaro;

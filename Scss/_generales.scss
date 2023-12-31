@@ -13,3 +13,25 @@ body{
     grid-template-rows: auto auto auto;
     background-color: rgb(46, 45, 45);
 }
+img[alt='www.000webhost.com']{
+    display: none
+} 
+
+.swal2-container.swal2-center>.swal2-popup {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.791);
+}
+.swal2-styled.swal2-confirm {
+    background-color: #0074d3 !important;
+}
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px rgb(159 212 255) !important;
+}
+.btn-primary {
+    border-color: #00000075;
+}
+@media screen and (min-width: 1px) and (max-width: 576px){
+    .swal2-container.swal2-center>.swal2-popup {
+    font-size: 13px;
+    }
+}
+

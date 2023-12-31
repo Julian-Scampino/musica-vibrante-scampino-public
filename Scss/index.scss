@@ -40,7 +40,7 @@
     line-height: 26px;
 }
 .seccion__nosotros-index{
-    background-color: rgb(160, 49, 49);
+    background-color: variables.$rojoOpaco;
 }
 .articles__nosotros-index{
     height: 100%;
@@ -158,7 +158,7 @@ section article div h2{
 }
 //----------Seccion de comentarios con citas de index
 .seccion__comentarios-index {
-    background: #a03131;
+    background: variables.$rojoOpaco;
     padding: 0px;
 }
 article.articles__comentarios-index.article__index {

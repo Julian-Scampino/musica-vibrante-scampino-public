@@ -24,9 +24,18 @@
     color: white;
     text-align: center;
     margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .article__nosotros h2{
     margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+} 
+.article__nosotros p{
+    text-align: left;
 } 
 .contenedor__avatar{
     display: flex;
@@ -36,22 +45,13 @@
 }
 
 #avatar{
-    border: 5px solid #ff00007d;
+    border: 5px solid rgb(0 0 0 / 28%);
     width: 200px;
     height: 200px;
 }
 #avatar__director-texto{
-    color: red;
+    color: #ff8888;
     font-size: 20px;
-}
-.seccion__nosotros hr{
-    border: none;
-    height: 3px;
-    width: 20%;
-    margin: 0;
-    background-color: white;
-    opacity: 1;
-    color: inherit;
 }
 /* ---------------------------------------------- RESPONSIVE---------------------------------------------- */
 
@@ -59,9 +59,6 @@
 @media screen and (min-width: 768px) and (max-width: 991px){
     @include seccionRepetitiva.queriesMin768Max991;
 
-    .btn-primary {
-        margin-bottom: 30px;
-    }
     .article__nosotros{
         width: 75%;
     }
@@ -72,9 +69,7 @@
     .article__nosotros{
         width: 100%;
         padding: 40px;
-    }
-    .btn-primary {
-        margin-bottom: 30px;
+        padding: 0 40px;
     }
 }
 /* ---------------------- mobile mas chico -------------------- */ 
@@ -82,9 +77,6 @@
     @include seccionRepetitiva.queriesMin1Max576;
     .article__nosotros{
         width: 100%;
-        padding: 40px;
-    }
-    .btn-primary {
-        margin-bottom: 30px;
+        padding: 0 40px;
     }
 }
